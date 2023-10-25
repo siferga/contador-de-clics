@@ -3,14 +3,18 @@ import './App.css';
 import freeCodeCampLogo from './images/freecodecamp-logo.png';
 import Button from './components/Button';
 import Counter from './components/Counter';
+import { useState } from 'react';
 
 function App() {
+
+  const [nClicks, setNClicks] = useState(0);
+
   const makeClick = () => {
-    console.log('Click');
+    setNClicks(nClicks + 1);
   }
 
   const resetCounter = () => {
-    console.log('Reset');
+    setNClicks(0);
   }
 
   return (
@@ -22,7 +26,7 @@ function App() {
         alt='logo de freeCodeCamp' />
       </div>
       <div className='main-container'>
-        <Counter nClicks='5' />
+        <Counter nClicks={nClicks} />
         <Button
           text= 'Click'
           isButtonofClick={true}
