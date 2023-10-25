@@ -26,11 +26,11 @@ function App() {
         <Button
           text= 'Click'
           isButtonofClick={true}
-          makeClick={makeClick}/>
+          makeClick={makeClick} />
         <Button
           text= 'Reset'
           isButtonisClick={false}
-          makeClick={resetCounter}/>
+          makeClick={resetCounter} />
       </div>
     </div>
   );

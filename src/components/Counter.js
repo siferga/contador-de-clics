@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styleSheets/Counter.css';
 
 function Counter({ nClicks }) {
   return (
