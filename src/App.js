@@ -2,6 +2,7 @@
 import './App.css';
 import freeCodeCampLogo from './images/freecodecamp-logo.png';
 import Button from './components/Button';
+import Counter from './components/Counter';
 
 function App() {
   const makeClick = () => {
@@ -21,7 +22,7 @@ function App() {
         alt='logo de freeCodeCamp' />
       </div>
       <div className='main-container'>
-        
+        <Counter nClicks='5' />
         <Button
           text= 'Click'
           isButtonofClick={true}
